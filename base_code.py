@@ -1,17 +1,18 @@
 import os
 import Status
+import vars
 
 
 #Menu#
-print("                                                            ")
-print("#######                             ######  ######   #####  ")
-print("   #    ###### #    # #####         #     # #     # #     # ")
-print("   #    #       #  #    #           #     # #     # #       ")
-print("   #    #####    ##     #           ######  ######  #  #### ")
-print("   #    #        ##     #           #   #   #       #     # ")
-print("   #    #       #  #    #           #    #  #       #     # ")
-print("   #    ###### #    #   #           #     # #        #####  ")
-print("                                                            ")
+print("                                                                      ")
+print("#######                                       ######  ######   #####  ")
+print("   #    ###### #    # #####                   #     # #     # #     # ")
+print("   #    #       #  #    #                     #     # #     # #       ")
+print("   #    #####    ##     #                     ######  ######  #  #### ")
+print("   #    #        ##     #                     #   #   #       #     # ")
+print("   #    #       #  #    #                     #    #  #       #     # ")
+print("   #    ###### #    #   #                     #     # #        #####  ")
+print("                                                                      ")
 
 
 
@@ -39,31 +40,42 @@ if text == 1:
         pass
 
     #Pegou Espada#
-    if text == 1:
+    elif text == 1:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("voce pegou a espada")
+        vars.itens += ("espada")
+        vars.itens_pegos += 1
+        vars.atack += 10
         pass
 
     #Pegou Arco#
-    if text == 2:
+    elif text == 2:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("voce pegou o arco")
+        vars.itens += ("arco")
+        vars.itens_pegos += 1
+        vars.atack_longa_distancia += 10
         pass
-
     #Pegou Armadura#
-    if text == 3:
+    elif text == 3:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("voce pegou o armadura")
+        vars.itens += ("armadura")
+        vars.itens_pegos += 1
+        vars.defesa += 10
         pass
 
     #Pegou Escudo#
-    if text == 4:
+    elif text == 4:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("voce pegou o escudo")
+        vars.itens += ("escudo")
+        vars.itens_pegos += 1
+        vars.defesa += 10
         pass
 
     #Procurar Outras Coisas#
-    if text == 5:
+    elif text == 5:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("você achou um bau pareçe estar destrancado")
         print("1- abrir")
@@ -71,7 +83,7 @@ if text == 1:
         pass
 
     #Sair do Quarto#
-    if text == 6:
+    elif text == 6:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("você quer sair sem pegar nada?")
         pass
