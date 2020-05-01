@@ -8,3 +8,4 @@ recuperação_da_poçao = 10
 itens_pegos = 0
 itens = ("")
 mochila = 10
+text = ("")
