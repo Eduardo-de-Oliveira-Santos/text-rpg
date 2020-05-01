@@ -19,7 +19,6 @@ print("                                                            ")
 print("1- jogar")
 print("2- sair")
 text = int(input("oque fazer? "))
-
 #Começo do Jogo#
 if text == 1:
     os.system('cls' if os.name == 'nt' else 'clear')
