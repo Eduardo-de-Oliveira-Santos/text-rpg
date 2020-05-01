@@ -1,5 +1,5 @@
 import vars
-
+import os
 
 CLEAR = 'cls' if os.name == 'nt' else 'clear' 
 limpa_tela = lambda : os.system(CLEAR)
@@ -41,3 +41,5 @@ def status():
             return
             
         input('Enter para continuar')
+if __name__ == '__main__':
+     status()

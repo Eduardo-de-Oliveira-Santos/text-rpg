@@ -1,5 +1,5 @@
 import os
-import vars
+import Status
 
 
 #Menu#
@@ -36,7 +36,7 @@ if text == 1:
     #Status#
     if text == 0:
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("em produçao")
+        Status.status()
         pass
 
     #Pegou Espada#
