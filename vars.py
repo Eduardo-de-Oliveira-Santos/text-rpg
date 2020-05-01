@@ -1,0 +1,9 @@
+vida = 100
+defesa = 10
+atack = 5
+atack_longa_distancia = 0
+dinheiro = 500
+poçoes = 0
+recuperação_da_poçao = 10
+itens_pegos = 0
+itens = ("")
