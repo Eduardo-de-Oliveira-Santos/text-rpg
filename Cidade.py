@@ -16,7 +16,9 @@ def cidade():
         print("2- ir para o hospital")
         print("3- ir para a loja")
         vars.text = int(input("oque fazer? "))
-
+        if vars.text == 0:
+            limpa_tela()
+            Status.status()
         if vars.text == 1:
             Quarto.game()
         elif vars.text == 2:

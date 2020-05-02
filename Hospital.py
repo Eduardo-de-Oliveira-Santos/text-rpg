@@ -16,7 +16,6 @@ def hospital():
             print("1- sim")
             print("2- nao")
             vars.text = int(input("oque fazer? "))
-
             if vars.text == 0:
                 limpa_tela()
                 Status.status()
