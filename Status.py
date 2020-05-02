@@ -6,40 +6,25 @@ limpa_tela = lambda : os.system(CLEAR)
 
 def status():
     while 1: #loop infinito, vai reduzir algumas linhas no codigo
-        #Status#
         limpa_tela()
-        print("1- vida")
-        print("2- defesa")
-        print("3- atack")
-        print("4- dinhero")
-        print("5- poçoes")
-        print("6- sair")
-        vars.text = int(input("oque fazer? "))
+        print(" ________________________________________________________")
+        print("|  Vida:",vars.vida             ("poções:",vars.poçoes)("|"))
+        print("|////////////////////////////////////////////////////////|")
+        print("|////////////////////////////////////////////////////////|")
+        print("|////////////////////////////////////////////////////////|")
+        print("|  Defesa:",vars.defesa         ("Atack:",vars.atack)  ("|"))
+        print("|////////////////////////////////////////////////////////|")
+        print("|////////////////////////////////////////////////////////|")
+        print("|               Dinhero:",vars.dinheiro)("               |")
+        print("|////////////////////////////////////////////////////////|")
+        print("|                      1- sair                           |")
+        print("|________________________________________________________|")
 
-        #check vida#
-        if vars.text == 1:
-            print("vida:",vars.vida)
-        
-        #check defesa#
-        elif vars.text == 2:
-            print("defesa:",vars.defesa)
-
-        #check atack#
-        elif vars.text == 3:
-            print("atack:",vars.atack)
-
-        #check dinhero#
-        elif vars.text == 4:
-            print("dinhero:",vars.dinheiro)
-                                                                                     
-        #check poçoes#
-        elif vars.text == 5:
-            print("poçoes:",vars.poçoes)
 
         #sair#
-        elif vars.text == 6:
+        if vars.text == 1:
             return
             
-        input('Enter para continuar')
+        vars.text = input('oque fazer? ')
 if __name__ == '__main__':
      status()
