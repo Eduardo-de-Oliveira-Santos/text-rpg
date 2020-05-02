@@ -70,7 +70,7 @@ def game():
         #Sair do Quarto#
         elif vars.text == 6:
             limpa_tela()
-            if vars.itens >= 1:
+            if vars.itens == 1:
                 pass
             else:
                 print("você quer sair sem pegar nada?")

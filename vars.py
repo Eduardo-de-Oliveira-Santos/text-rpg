@@ -1,4 +1,5 @@
 vida = 100
+vida_max = 100
 defesa = 10
 atack = 5
 atack_longa_distancia = 0
