@@ -1,6 +1,7 @@
 import os
 import Status
 import vars
+import Cidade
 
 CLEAR = 'cls' if os.name == 'nt' else 'clear' 
 limpa_tela = lambda : os.system(CLEAR)
@@ -71,13 +72,16 @@ def game():
         elif vars.text == 6:
             limpa_tela()
             if vars.itens == 1:
-                pass
+                Cidade.cidade()
             else:
                 print("você quer sair sem pegar nada?")
                 print("1- sair")
                 print("2- voltar")
                 vars.text = int(input("oque fazer? "))
-                pass
+                if vars.text == 1:
+                    Cidade.cidade()
+                else:
+                    print("acho melhor pegar algo primeiro")
         
         
         input('Enter para continuar')
