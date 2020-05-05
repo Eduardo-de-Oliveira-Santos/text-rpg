@@ -3,9 +3,8 @@ import Status
 import vars
 import Quarto
 import Cidade
+from ferramentas_diverças import limpa_tela
 
-CLEAR = 'cls' if os.name == 'nt' else 'clear'
-limpa_tela = lambda : os.system(CLEAR)
 
 def hospital():
     while 1:

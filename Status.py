@@ -1,8 +1,7 @@
 import vars
 import os
+from ferramentas_diverças import limpa_tela
 
-CLEAR = 'cls' if os.name == 'nt' else 'clear' 
-limpa_tela = lambda : os.system(CLEAR)
 
 def status():
     while 1: #loop infinito, vai reduzir algumas linhas no codigo
@@ -24,6 +23,8 @@ def status():
         #sair#
         if vars.text == 1:
             return
+        else:
+            
             
 if __name__ == '__main__':
      status()

@@ -2,9 +2,8 @@ import os
 import Status
 import vars
 import Cidade
+from ferramentas_diverças import limpa_tela
 
-CLEAR = 'cls' if os.name == 'nt' else 'clear' 
-limpa_tela = lambda : os.system(CLEAR)
 
 def game():
     while 1:
