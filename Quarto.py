@@ -2,6 +2,7 @@ import os
 import Status
 import vars
 import Cidade
+import player
 from ferramentas_diverças import limpa_tela
 
 
@@ -27,7 +28,7 @@ def game():
         elif vars.text == 1:
             limpa_tela()
             print("voce pegou a espada")
-            vars.itens += ("espada")
+            player.itens += "espada"
             vars.itens_pegos += 1
             vars.atack += 10
 
@@ -35,7 +36,7 @@ def game():
         elif vars.text == 2:
             limpa_tela()
             print("voce pegou o arco")
-            vars.itens += ("arco")
+            player.itens += "arco"
             vars.itens_pegos += 1
             vars.atack_longa_distancia += 10
 
@@ -43,7 +44,7 @@ def game():
         elif vars.text == 3:
             limpa_tela()
             print("voce pegou o armadura")
-            vars.itens += ("armadura")
+            player.itens += "armadura"
             vars.itens_pegos += 1
             vars.defesa += 10
 
@@ -51,7 +52,7 @@ def game():
         elif vars.text == 4:
           limpa_tela()
           print("voce pegou o escudo")
-          vars.itens += ("escudo")
+          player.itens += "escudo"
           vars.itens_pegos += 1
           vars.defesa += 10
 

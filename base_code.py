@@ -1,7 +1,7 @@
 import os
 import Status
 import vars
-import Quarto
+import Dividir_Pontos
 from ferramentas_diverças import limpa_tela
 
 
@@ -20,7 +20,7 @@ vars.text = int(input("oque fazer? "))
 #Começo do Jogo#
 if vars.text == 1:
     limpa_tela()
-    Quarto.game()
+    Dividir_Pontos.dividir_pontos()
     pass
 else:
     pass
