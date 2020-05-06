@@ -1,5 +1,4 @@
 import os
-import Status
 import vars
 import Dividir_Pontos
 from ferramentas_diverças import limpa_tela

@@ -24,7 +24,7 @@ def status():
         if vars.text == 1:
             return
         else:
-            
-            
+            pass
+
 if __name__ == '__main__':
      status()
