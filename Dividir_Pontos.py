@@ -22,39 +22,39 @@ def dividir_pontos():
             player.agilidade += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 2:
+        elif vars.text == 2:
             player.furtividade += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 3:
+        elif vars.text == 3:
             player.sorte += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 4:
+        elif vars.text == 4:
             player.labia += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 5:
+        elif vars.text == 5:
             player.inteligencia += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 6:
+        elif vars.text == 6:
             player.força += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 7:
+        elif vars.text == 7:
             player.mira += 1
             pontos -= 1
             limpa_tela()
-        if vars.text == 8:
+        elif vars.text == 8:
             player.carisma += 1
             pontos -= 1
             limpa_tela()
-        if pontos == 0:
+        elif pontos == 0:
             Quarto.game()
 
 if __name__ == '__main__':
-     status()
+     dividir_pontos()
 
 
     

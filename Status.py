@@ -1,23 +1,21 @@
 import vars
 import os
+import player
 from ferramentas_diverças import limpa_tela
 
 
 def status():
     while 1: #loop infinito, vai reduzir algumas linhas no codigo
         limpa_tela()
-        print(" ________________________________________________________")
-        print("|//Vida:",vars.vida,"///////////////////////////////","poções:",vars.poçoes,"//|")
-        print("|////////////////////////////////////////////////////////|")
-        print("|////////////////////////////////////////////////////////|")
-        print("|////////////////////////////////////////////////////////|")
-        print("|//Defesa:",vars.defesa,"///////////////////////////////","Atack:",vars.atack,"//|")
-        print("|////////////////////////////////////////////////////////|")
-        print("|////////////////////////////////////////////////////////|")
-        print("|////////////////////Dinhero:",vars.dinheiro,"///////////////////////|")
-        print("|////////////////////////////////////////////////////////|")
-        print("|//////////////////////1- sair///////////////////////////|")
-        print("|________________________________________________________|")
+        print("Vida:",vars.vida)
+        print("poções:",vars.poçoes)
+        print("Defesa:",vars.defesa)
+        print("Atack:",vars.atack)
+        print("Dinhero:",vars.dinheiro)
+        print("nivel:",player.nivel)
+        print("xp:",player.xp)
+        print("ocupação:",player.ocupaçao)
+        print("1- sair")
         vars.text = int(input('oque fazer? '))
 
         #sair#

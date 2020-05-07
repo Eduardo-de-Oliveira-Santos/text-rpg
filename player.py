@@ -6,6 +6,9 @@ inteligencia = 10
 força = 6
 mira = 5
 carisma = 5
+nivel = 0
+xp = 0
+ocupaçao = {}
 
 mochila = 10
 itens = {}

@@ -3,6 +3,7 @@ import Status
 import vars
 import Cidade
 import player
+import Mochila
 from ferramentas_diverças import limpa_tela
 
 
@@ -11,12 +12,13 @@ def game():
         limpa_tela()
         print("você acorda em um quarto com uma espada um arco uma armadura e um escudo")
         print("0- status")
-        print("1- pegar espada")
-        print("2- pegar arco")
-        print("3- pegar armadura")
-        print("4- pegar escudo")
-        print("5- procurar outras coisas")
-        print("6- sair do quarto")
+        print("1- mochila")
+        print("2- pegar espada")
+        print("3- pegar arco")
+        print("4- pegar armadura")
+        print("5- pegar escudo")
+        print("6- procurar outras coisas")
+        print("7- sair do quarto")
         vars.text = int(input("oque fazer? "))
 
         #Status#
@@ -24,8 +26,12 @@ def game():
            limpa_tela()
            Status.status()
 
-        #Pegou Espada#
         elif vars.text == 1:
+            limpa_tela()
+            Mochila.mochila()
+
+        #Pegou Espada#
+        elif vars.text == 2:
             limpa_tela()
             print("voce pegou a espada")
             player.itens += "espada"
@@ -33,7 +39,7 @@ def game():
             vars.atack += 10
 
         #Pegou Arco#
-        elif vars.text == 2:
+        elif vars.text == 3:
             limpa_tela()
             print("voce pegou o arco")
             player.itens += "arco"
@@ -41,7 +47,7 @@ def game():
             vars.atack_longa_distancia += 10
 
         #Pegou Armadura#
-        elif vars.text == 3:
+        elif vars.text == 4:
             limpa_tela()
             print("voce pegou o armadura")
             player.itens += "armadura"
@@ -49,7 +55,7 @@ def game():
             vars.defesa += 10
 
         #Pegou Escudo#
-        elif vars.text == 4:
+        elif vars.text == 5:
           limpa_tela()
           print("voce pegou o escudo")
           player.itens += "escudo"
@@ -58,7 +64,7 @@ def game():
 
 
         #Procurar Outras Coisas#
-        elif vars.text == 5:
+        elif vars.text == 6:
             limpa_tela()
             print("você achou um bau pareçe estar destrancado")
             print("1- abrir")
@@ -69,7 +75,7 @@ def game():
                 vars.dinheiro += 1000
 
         #Sair do Quarto#
-        elif vars.text == 6:
+        elif vars.text == 7:
             limpa_tela()
             if vars.itens == 1:
                 Cidade.cidade()
