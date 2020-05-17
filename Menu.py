@@ -3,7 +3,6 @@ import Variaveis
 from Ferramentas_Diverças import limpa_tela
 
 
-#Menu#
 print("******************************************************************")
 print("*    ____  ________  _______  _   _______    __ __ ________  ___ *")
 print("*   / __ \/ ____/  |/  / __ \/ | / / ___/   / //_//  _/ __ \/   |*")
@@ -26,6 +25,5 @@ Variaveis.text = int(input("oque fazer? "))
 if Variaveis.text == 1:
     limpa_tela()
     Adicionar_infos.Nome()
-    pass
 else:
     pass
