@@ -7,6 +7,8 @@ from Ferramentas_Diverças import limpa_tela
 
 def D_Pontos():
     while 1:
+        limpa_tela()
+        print("Divida seu pontos")
         print("pontos disponiveis:", Player.pontos)
         print("1- agilidade = ", Player.agilidade)
         print("2- furtividade = ", Player.furtividade)
