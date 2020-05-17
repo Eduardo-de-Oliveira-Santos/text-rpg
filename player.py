@@ -1,4 +1,5 @@
-Nome = ""
+nome = ""
+idade = 0
 
 agilidade = 5
 furtividade = 3
@@ -15,3 +16,4 @@ ocupaçao = {}
 mochila = 10
 itens = {}
 abilidades = {}
+pontos = 20

@@ -1,4 +1,5 @@
 import Adicionar_infos
+import Variaveis
 from Ferramentas_Diverças import limpa_tela
 
 
