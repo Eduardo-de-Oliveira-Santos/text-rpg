@@ -1,7 +1,5 @@
-import os
-import vars
-import Dividir_Pontos
-from ferramentas_diverças import limpa_tela
+import Adicionar_infos
+from Ferramentas_Diverças import limpa_tela
 
 
 #Menu#
@@ -15,11 +13,11 @@ print("                                                                         
 
 print("1- jogar")
 print("2- sair")
-vars.text = int(input("oque fazer? "))
+Variaveis.text = int(input("oque fazer? "))
 #Começo do Jogo#
-if vars.text == 1:
+if Variaveis.text == 1:
     limpa_tela()
-    Dividir_Pontos.dividir_pontos()
+    Adicionar_infos.Nome()
     pass
 else:
     pass

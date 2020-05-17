@@ -1,9 +1,9 @@
 import os
 import Status
-import vars
+import Variaveis
 import Quarto
 import Hospital
-from ferramentas_diverças import limpa_tela
+from Ferramentas_Diverças import limpa_tela
 
 def cidade():
     while 1:
@@ -13,13 +13,13 @@ def cidade():
         print("1- voltar para a casa")
         print("2- ir para o hospital")
         print("3- ir para a loja")
-        vars.text = int(input("oque fazer? "))
-        if vars.text == 0:
+        Variaveis.text = int(input("oque fazer? "))
+        if Variaveis.text == 0:
             limpa_tela()
             Status.status()
-        if vars.text == 1:
+        if Variaveis.text == 1:
             Quarto.game()
-        elif vars.text == 2:
+        elif Variaveis.text == 2:
             Hospital.hospital()
 
         input('Enter para continuar')

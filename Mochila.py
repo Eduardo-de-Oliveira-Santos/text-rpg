@@ -1,14 +1,17 @@
-import player
+import Player
 import Quarto
+from Ferramentas_Diverças import limpa_tela
+
 
 def mochila():
     while 1:
-        print("espaços disponiveis:",player.mochila)
-        print(player.itens)
+        limpa_tela()
+        print("espaços disponiveis:",Player.mochila)
+        print(Player.itens)
         print("1- voltar")
-        vars.text = int(input("oque fazer? "))
+        Variaveis.text = int(input("oque fazer? "))
 
-        if vars.text == 1:
+        if Variaveis.text == 1:
             return
 
 if __name__ == '__main__':

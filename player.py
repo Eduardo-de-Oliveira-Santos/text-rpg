@@ -1,3 +1,5 @@
+Nome = ""
+
 agilidade = 5
 furtividade = 3
 sorte = 0

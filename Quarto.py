@@ -1,10 +1,10 @@
 import os
 import Status
-import vars
+import Variaveis
 import Cidade
-import player
+import Player
 import Mochila
-from ferramentas_diverças import limpa_tela
+from Ferramentas_Diverças import limpa_tela
 
 
 def game():
@@ -19,77 +19,79 @@ def game():
         print("5- pegar escudo")
         print("6- procurar outras coisas")
         print("7- sair do quarto")
-        vars.text = int(input("oque fazer? "))
+        Variaveis.text = int(input("oque fazer? "))
 
         #Status#
-        if vars.text == 0:
+        if Variaveis.text == 0:
            limpa_tela()
            Status.status()
 
-        elif vars.text == 1:
+        elif Variaveis.text == 1:
             limpa_tela()
             Mochila.mochila()
 
         #Pegou Espada#
-        elif vars.text == 2:
+        elif Variaveis.text == 2:
             limpa_tela()
             print("voce pegou a espada")
-            player.itens += "espada"
-            vars.itens_pegos += 1
-            vars.atack += 10
+            Player.itens += "espada"
+            Variaveis.itens_pegos += 1
+            Variaveis.atack += 10
 
         #Pegou Arco#
-        elif vars.text == 3:
+        elif Variaveis.text == 3:
             limpa_tela()
             print("voce pegou o arco")
-            player.itens += "arco"
-            vars.itens_pegos += 1
-            vars.atack_longa_distancia += 10
+            Player.itens += "arco"
+            Variaveis.itens_pegos += 1
+            Variaveis.atack_longa_distancia += 10
 
         #Pegou Armadura#
-        elif vars.text == 4:
+        elif Variaveis.text == 4:
             limpa_tela()
             print("voce pegou o armadura")
-            player.itens += "armadura"
-            vars.itens_pegos += 1
-            vars.defesa += 10
+            Player.itens += "armadura"
+            Variaveis.itens_pegos += 1
+            Variaveis.defesa += 10
 
         #Pegou Escudo#
-        elif vars.text == 5:
+        elif Variaveis.text == 5:
           limpa_tela()
           print("voce pegou o escudo")
-          player.itens += "escudo"
-          vars.itens_pegos += 1
-          vars.defesa += 10
+          Player.itens += "escudo"
+          Variaveis.itens_pegos += 1
+          Variaveis.defesa += 10
 
 
         #Procurar Outras Coisas#
-        elif vars.text == 6:
+        elif Variaveis.text == 6:
             limpa_tela()
             print("você achou um bau pareçe estar destrancado")
             print("1- abrir")
             print("2- deixar pra lá")
-            vars.text = int(input("oque fazer? "))
-            if vars.text == 1:
+            Variaveis.text = int(input("oque fazer? "))
+            if Variaveis.text == 1:
                 print("voce achou 1000 moedas")
-                vars.dinheiro += 1000
+                Variaveis.dinheiro += 1000
 
         #Sair do Quarto#
-        elif vars.text == 7:
+        elif Variaveis.text == 7:
             limpa_tela()
-            if vars.itens == 1:
+            if Variaveis.itens == 1:
                 Cidade.cidade()
             else:
                 print("você quer sair sem pegar nada?")
                 print("1- sair")
                 print("2- voltar")
-                vars.text = int(input("oque fazer? "))
-                if vars.text == 1:
+                Variaveis.text = int(input("oque fazer? "))
+                if Variaveis.text == 1:
                     Cidade.cidade()
                 else:
                     print("acho melhor pegar algo primeiro")
         
-        
+        else:
+            print("comando invalido")
+            
         input('Enter para continuar')
 if __name__ == '__main__':
      game()
