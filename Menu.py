@@ -1,4 +1,4 @@
-import Adicionar_infos
+import Historia  #Adicionar_infos
 import Variaveis
 from Ferramentas_Diverças import limpa_tela
 
@@ -24,6 +24,6 @@ Variaveis.text = int(input("oque fazer? "))
 #Começo do Jogo#
 if Variaveis.text == 1:
     limpa_tela()
-    Adicionar_infos.Nome()
+    Historia.enredo()
 else:
     pass
