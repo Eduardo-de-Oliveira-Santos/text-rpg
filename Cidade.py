@@ -3,6 +3,7 @@ import Status
 import Variaveis
 import Quarto
 import Hospital
+import Loja
 from Ferramentas_Diverças import limpa_tela
 
 def cidade():
@@ -21,6 +22,8 @@ def cidade():
             Quarto.game()
         elif Variaveis.text == 2:
             Hospital.hospital()
+        elif Variaveis.text == 3:
+            Loja.mercante()
 
         input('Enter para continuar')
 

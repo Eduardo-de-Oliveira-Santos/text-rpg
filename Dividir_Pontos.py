@@ -18,48 +18,58 @@ def D_Pontos():
         print("6- força = ", Player.força)
         print("7- mira = ", Player.mira)
         print("8- carisma = ", Player.carisma)
-        Variaveis.text = int(input("oque fazer? "))
+        Variaveis.text = int(input('oque fazer? '))
+
+        if Player.pontos == 0:
+            Quarto.game()
+            
         if Variaveis.text == 1:
             Player.agilidade += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 2:
             Player.furtividade += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 3:
             Player.sorte += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 4:
             Player.labia += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 5:
             Player.inteligencia += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 6:
             Player.força += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 7:
             Player.mira += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
              
         elif Variaveis.text == 8:
             Player.carisma += 1
             Player.pontos -= 1
+            print("adicionado com sucesso")
             limpa_tela()
-        if Player.pontos == 0:
-            Quarto.game()
             
 
         input('Enter para continuar')

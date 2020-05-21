@@ -34,7 +34,7 @@ def game():
         elif Variaveis.text == 2:
             limpa_tela()
             print("voce pegou a espada")
-            Player.itens += "espada"
+            #Player.itens += "espada"
             Variaveis.itens_pegos += 1
             Variaveis.atack += 10
 
@@ -42,7 +42,7 @@ def game():
         elif Variaveis.text == 3:
             limpa_tela()
             print("voce pegou o arco")
-            Player.itens += "arco"
+            #Player.itens += "arco"
             Variaveis.itens_pegos += 1
             Variaveis.atack_longa_distancia += 10
 
@@ -50,7 +50,7 @@ def game():
         elif Variaveis.text == 4:
             limpa_tela()
             print("voce pegou o armadura")
-            Player.itens += "armadura"
+            #Player.itens += "armadura"
             Variaveis.itens_pegos += 1
             Variaveis.defesa += 10
 
@@ -58,7 +58,7 @@ def game():
         elif Variaveis.text == 5:
           limpa_tela()
           print("voce pegou o escudo")
-          Player.itens += "escudo"
+          #Player.itens += "escudo"
           Variaveis.itens_pegos += 1
           Variaveis.defesa += 10
 
@@ -77,7 +77,7 @@ def game():
         #Sair do Quarto#
         elif Variaveis.text == 7:
             limpa_tela()
-            if Variaveis.itens == 1:
+            if Variaveis.itens_pegos == 1:
                 Cidade.cidade()
             else:
                 print("você quer sair sem pegar nada?")
