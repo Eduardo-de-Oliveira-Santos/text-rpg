@@ -14,6 +14,7 @@ xp = 0
 ocupaçao = {}
 
 mochila = 10
+madeiras = 0 
 itens = {}
 abilidades = {}
 pontos = 20

@@ -20,13 +20,20 @@ def hospital():
                 Status.status()
             elif Variaveis.text == 1:
                 limpa_tela()
-                Variaveis.vida = vida_max
+                Variaveis.vida == Variaveis.vida_max
                 print("voce esta curado ate mais")
                 return
             if Variaveis.text == 2:
                 limpa_tela()
                 print("ok adeus")
                 return
+        
+        if Variaveis.vida <= 0:
+            limpa_tela()
+            Variaveis.vida == Variaveis.vida_max
+            print("voce esta curado ate mais")
+            return
+            
         if Variaveis.vida >= Variaveis.vida_max:
             limpa_tela()
             print("voce ja esta saldavel nao a porque ficar aqui")

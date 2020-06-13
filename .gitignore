@@ -1,0 +1,7 @@
+
+.vscode/settings.json
+__pycache__/Dividir_Pontos.cpython-38.pyc
+__pycache__/Adicionar_infos.cpython-38.pyc
+__pycache__/Status.cpython-38.pyc
+__pycache__/Mochila.cpython-38.pyc
+*.pyc

@@ -33,33 +33,37 @@ def game():
         #Pegou Espada#
         elif Variaveis.text == 2:
             limpa_tela()
-            print("voce pegou a espada")
-            #Player.itens += "espada"
+            print("voce pegou a espada ruim")
+            Player.itens += "espada ruim"
             Variaveis.itens_pegos += 1
+            Player.mochila -= 1
             Variaveis.atack += 10
 
         #Pegou Arco#
         elif Variaveis.text == 3:
             limpa_tela()
-            print("voce pegou o arco")
-            #Player.itens += "arco"
+            print("voce pegou o arco velho")
+            Player.itens += "arco velho"
             Variaveis.itens_pegos += 1
+            Player.mochila -= 1
             Variaveis.atack_longa_distancia += 10
 
         #Pegou Armadura#
         elif Variaveis.text == 4:
             limpa_tela()
-            print("voce pegou o armadura")
-            #Player.itens += "armadura"
+            print("voce pegou o armadura estragada")
+            Player.itens += "armadura estragada"
             Variaveis.itens_pegos += 1
+            Player.mochila -= 1
             Variaveis.defesa += 10
 
         #Pegou Escudo#
         elif Variaveis.text == 5:
           limpa_tela()
-          print("voce pegou o escudo")
-          #Player.itens += "escudo"
+          print("voce pegou o escudo quebrado")
+          Player.itens += "escudo quebrado"
           Variaveis.itens_pegos += 1
+          Player.mochila -= 1
           Variaveis.defesa += 10
 
 
@@ -70,7 +74,7 @@ def game():
             print("1- abrir")
             print("2- deixar pra lá")
             Variaveis.text = int(input("oque fazer? "))
-            if Variaveis.text == 1:
+            if Variaveis.text == 1 and Variaveis.dinheiro >= 500:
                 print("voce achou 1000 moedas")
                 Variaveis.dinheiro += 1000
 

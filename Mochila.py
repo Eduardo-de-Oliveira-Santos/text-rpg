@@ -17,17 +17,7 @@ def mochila():
             return
             
         if Variaveis.text == 513:
-            Cheats.agilidade()
-        if Variaveis.text == 514:
-            Cheats.agilidade()
-        if Variaveis.text == 515:
-            Cheats.agilidade()
-        if Variaveis.text == 516:
-            Cheats.agilidade()
-        if Variaveis.text == 517:
-            Cheats.agilidade()
-        if Variaveis.text == 518:
-            Cheats.agilidade()
+            Cheats.dinheiro()
         
 
 if __name__ == '__main__':

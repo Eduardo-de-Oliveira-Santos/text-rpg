@@ -1,5 +1,5 @@
 import Player
-
+import Variaveis
 
 def agilidade():
     Player.agilidade += 999
@@ -30,3 +30,6 @@ def nivel():
 
 def mochila():
     Player.mochila == 999
+
+def dinheiro():
+    Variaveis.dinheiro += 1000000
