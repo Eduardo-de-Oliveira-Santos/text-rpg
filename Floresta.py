@@ -2,7 +2,7 @@ import os
 import Status
 import Variaveis
 import Player
-import Slime
+import Selecionar_inimigo
 from Ferramentas_Diverças import limpa_tela
 
 
@@ -29,10 +29,10 @@ def floresta():
 
         if Variaveis.text == 3:
             limpa_tela()
-            Slime.batalha()
+            Selecionar_inimigo.selecionar()
             
-
-        input('Enter para continuar')
+        else :
+            input('Enter para continuar')
 
 
 

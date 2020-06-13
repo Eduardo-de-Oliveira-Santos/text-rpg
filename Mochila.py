@@ -18,7 +18,9 @@ def mochila():
             
         if Variaveis.text == 513:
             Cheats.dinheiro()
-        
+
+        if Variaveis.text == 514:
+            Cheats.força()        
 
 if __name__ == '__main__':
      mochila()

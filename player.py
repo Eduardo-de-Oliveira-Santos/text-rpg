@@ -13,6 +13,12 @@ nivel = 0
 xp = 0
 ocupaçao = {}
 
+dano_min = 5
+dano_max = 25
+
+defesa_min = -5
+defesa_max = 16
+
 mochila = 10
 madeiras = 0 
 itens = {}

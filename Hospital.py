@@ -22,22 +22,25 @@ def hospital():
                 limpa_tela()
                 Variaveis.vida == Variaveis.vida_max
                 print("voce esta curado ate mais")
-                return
+                Cidade.cidade()
+
             if Variaveis.text == 2:
                 limpa_tela()
                 print("ok adeus")
-                return
+                Cidade.cidade()
         
-        if Variaveis.vida <= 0:
+        elif Variaveis.vida <= 0:
             limpa_tela()
             Variaveis.vida == Variaveis.vida_max
             print("voce esta curado ate mais")
-            return
+            Cidade.cidade()
             
-        if Variaveis.vida >= Variaveis.vida_max:
+        elif Variaveis.vida >= Variaveis.vida_max:
             limpa_tela()
             print("voce ja esta saldavel nao a porque ficar aqui")
-            return
+            Cidade.cidade()
+
+
         input('Enter para continuar')
 
 if __name__ == '__main__':

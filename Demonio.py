@@ -17,8 +17,8 @@ def batalha():
             Hospital.hospital()
 
 
-        if Monstros_vars.vida_slime <= 0:
-            print("voçe derrotou o slime!!!!")
+        if Monstros_vars.vida_demonio <= 0:
+            print("voçe derrotou o demonio!!!!")
             ganho_em_dinheiro = random.randrange(1, 1000)
             ganho_em_experiencia = random.randrange(1, 20)
             Variaveis.dinheiro += ganho_em_dinheiro
@@ -32,7 +32,7 @@ def batalha():
             return
         limpa_tela()
         print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
-        print(f'{Fore.RED}۩Slime۩{Fore.RESET}                 vida:',Monstros_vars.vida_slime)
+        print(f'{Fore.RED}۩demonio۩{Fore.RESET}                 vida:',Monstros_vars.vida_demonio)
         print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
         print("")
         print("")
@@ -51,7 +51,7 @@ def batalha():
         if Variaveis.text == 1:
             miss = random.randrange(1, 100)
             miss_inimigo = random.randrange(1, 100)
-            dano_inimigo = random.randrange(Monstros_vars.dano_min_slime, Monstros_vars.dano_max_slime) + Monstros_vars.força_slime
+            dano_inimigo = random.randrange(0, 11) + Monstros_vars.força_demonio
 
             if miss <= 20 and miss_inimigo <= 10:
                 print("voce errou")
@@ -64,20 +64,20 @@ def batalha():
 
             if miss > 20 and miss_inimigo <= 10:
                 dano = random.randrange(Player.dano_min, Player.dano_max) + Player.força
-                Monstros_vars.vida_slime -= dano
+                Monstros_vars.vida_demonio -= dano
                 print("voce causou",dano,"pontos de dano")
                 print("o inimigo errou")
 
             if miss > 20 and miss_inimigo > 10:
                 dano = random.randrange(Player.dano_min, Player.dano_max) + Player.força
-                Monstros_vars.vida_slime -= dano
+                Monstros_vars.vida_demonio -= dano
                 print("voce causou",dano,"pontos de dano")
                 Variaveis.vida -= dano_inimigo
                 print("voce levou",dano_inimigo,"de dano")
 
         #comando de ataque
         if Variaveis.text == 2:
-            dano_inimigo = random.randrange(0, 11) + Monstros_vars.força_slime
+            dano_inimigo = random.randrange(0, 11) + Monstros_vars.força_demonio
             defesa = random.randrange(Player.defesa_min, Player.defesa_max) + Variaveis.defesa
             print("voce defendeu",defesa,"pontos mais levou",dano_inimigo,"pontos de dano")
             Variaveis.vida -= dano_inimigo - defesa

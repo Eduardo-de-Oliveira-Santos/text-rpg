@@ -33,3 +33,16 @@ def mochila():
 
 def dinheiro():
     Variaveis.dinheiro += 1000000
+
+
+
+
+
+
+
+
+
+
+
+
+    
