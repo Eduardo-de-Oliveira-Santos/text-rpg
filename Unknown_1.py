@@ -1,4 +1,4 @@
-import Monstros_vars
+import Monstros_vars, Floresta
 import Variaveis
 import Player
 import random
@@ -29,7 +29,7 @@ def batalha():
                 Player.xp -= 100
                 Player.nivel += 1
                 input('Enter para continuar')
-            return
+            Floresta.floresta()
         limpa_tela()
         print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
         print(f'{Fore.RED}۩51۩{Fore.RESET}                 vida:',Monstros_vars.vida_51)
